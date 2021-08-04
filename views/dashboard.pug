@@ -1,0 +1,35 @@
+html
+  include includes/head.pug
+  head
+  body
+    .position-relative.overflow-hidden.p-3.text-center.bg-light
+        .col-md-5.p-lg-5.mx-auto.my-5
+            h2.display-5.fw-normal Welcome to your dashboard.
+            strong=authorised
+            p.lead.fw-normal
+            | Pick an option below to discover our new real estate platform.
+  .container.px-4.py-5
+    .row.g-4.py-5.row-cols-1.row-cols-lg-4
+      .col.d-flex.align-items-start.card.card-body.m-1
+        div
+          h2 Available properties
+          p
+            | Discover and acquire listed houses which are on the market right now.
+          a.btn.btn-primary(href='available')
+            | View
+      .col.d-flex.align-items-start.card.card-body.m-1
+        div
+          h2 My properties
+          p
+            | An overview of all owned properties owned by this account.
+          a.btn.btn-primary(href='properties')
+            | View
+      .col.d-flex.align-items-start.card.card-body.m-1
+        div
+          h2 Settings
+          p
+            | Information about your current account. Your Ethereum account can be found here.
+          a.btn.btn-primary(href='settings')
+            | View
+
+

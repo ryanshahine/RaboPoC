@@ -1,0 +1,21 @@
+nav.navbar.navbar-expand-lg.navbar-light.container
+  .container-fluid.d-flex.justify-content-center
+    include logo.svg
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarText.collapse.navbar-collapse.ml-5
+      ul.navbar-nav.me-auto.mb-2.mb-lg-0
+       if authorised
+        li.nav-item
+          a.nav-link(href='dashboard') Dashboard
+        li.nav-item
+          a.nav-link(href='available') Available properties
+        li.nav-item
+          a.nav-link(href='properties') My properties
+      span.navbar-text
+      if authorised
+        a.btn.btn-outline-primary(type='button' href='logout') Log out
+      else
+        a.btn.btn-outline-primary(type='button' href="login") Log in
+
+

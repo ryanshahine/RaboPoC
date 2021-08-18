@@ -18,7 +18,7 @@ This README file accompanies the code of this PoC. It will go through design cho
 >Note: This does not verify on-chain that the user initiated the transaction, as the transaction is generated and initiated in the back-end by the main wallet and therefore likewise on the Ethereum blockchain. To conquer this, in a better version, we could generate a digital signature from the user along with metadata such as timestamps, a hash of a (digitally) signed contract, etc. and upload this to IPFS. After that, the CID of the metadata could be stored on chain/fed into the smart contract.
 
 ## User flow
-![User flow](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1c9e1dd0-bd1e-41c5-82af-8d57e000aa52/Untitled_%282%29.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210805%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210805T142853Z&X-Amz-Expires=86400&X-Amz-Signature=c5e5db18e3603fb3e8e9915107c416881cf4de30d8f8707c4b96a8d50618723c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled_%282%29.jpg%22)
+![User flow](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1c9e1dd0-bd1e-41c5-82af-8d57e000aa52/Untitled_%282%29.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210805%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210805T142853Z&X-Amz-Expires=86400&X-Amz-Signature=c5e5db18e3603fb3e8e9915107c416881cf4de30d8f8707c4b96a8d50618723c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled_%282%29.jpg)
 
 ## //TO-DO
 - Initiate transactions on /available -> /properties
